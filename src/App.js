@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router';
 import './App.css';
+import './Common.css';
 import Contact from './Contact/Contact';
 import Faqs from './FAQ\'S/Faqs';
 import Home from './Home/Home';

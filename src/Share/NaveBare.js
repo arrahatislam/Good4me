@@ -1,9 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Haider from '../Haider/Haider';
 import logo from '../imgs/Logo_-_Good4Me_140x 1.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { regular} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import Kei from '../imgs/Group 3.png';
 
 
 const NaveBare = () => {
@@ -12,7 +12,7 @@ const NaveBare = () => {
     return (
         <div>
             <Haider></Haider>
-            <div className="navbar bg-base-100 	flex justify-around">
+            <div className="navbar bg-base-100 sm:items-center	lg:flex lg:justify-around md:justify-between sm:justify-between">
                 <div className="">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@ const NaveBare = () => {
                         </ul>
                     </div>
                     <div  >
-                        <img  src={logo} alt="logo" />
+                        <img src={logo} alt="logo" />
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -41,8 +41,10 @@ const NaveBare = () => {
                         <li><Link to='/contact'>CONTACT</Link></li>
                     </ul>
                 </div>
-                <div className="">
-                    <Link to='' className=""><FontAwesomeIcon icon={regular('coffee')} /></Link>
+                <div className="justify-items-center md:mr-5">
+                    <Link to='' className=""><i class=" text-2xl fa-solid fa-magnifying-glass"></i></Link>
+                    <Link to='' className="mb-2 ml-3.5"><img src={Kei} alt="" /></Link>
+                
                 </div>
             </div>
         </div>
