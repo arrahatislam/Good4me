@@ -5,7 +5,7 @@ import UsaFlag from '../imgs/usaFlag.png';
 const Haider = () => {
     return (
         <div className=' bgColor hidden lg:block'>
-            <div className='text-lg mx-2 py-2 flex justify-around items-center text-white'>
+            <div className='text-lg mx-2 py-5 flex justify-around items-center text-white'>
                 <div><span className='font-wight '>Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*</span></div>
                 <div className='flex justify-around w-1/4 '>
                     <div className='mt-3'>
